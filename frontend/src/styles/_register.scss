@@ -1,0 +1,40 @@
+.body-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    .form-register {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid grey;
+      width: 50%;
+      // height: 400px;
+      padding: 0px 30px 30px 30px;
+      margin-bottom: 20px;
+      input {
+        width: 200px;
+      }
+      .logo {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .btn-connect {
+        background-color: #dc3545;
+        color: white;
+        font-weight: bold;
+        width: 200px;
+        height: 35px;
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
+        padding: 0px 50px 0px 50px;
+      }
+      .btn-inscr {
+        border: 1px solid red;
+      }
+    }
+  }
+  

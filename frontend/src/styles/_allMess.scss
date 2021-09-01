@@ -1,0 +1,66 @@
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 90%;
+    margin-bottom: 30px;
+    box-shadow: 6px 5px 6px rgb(228, 228, 228);
+    border-radius: 10px;
+  }
+  .card-username {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 12px 15px 12px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    .fa-user {
+      margin-right: 10px;
+    }
+    b {
+      font-weight: bold;
+      font-size: 15px;
+      text-shadow: 2px 2px 5px rgb(226, 226, 226);
+    }
+  }
+  .card-body {
+    .fa-user {
+      margin-right: 10px;
+    }
+    b {
+      font-weight: bold;
+      font-size: 15px;
+      text-shadow: 2px 2px 5px rgb(226, 226, 226);
+    }
+  }
+  .card-img-top {
+    max-width: 100%;
+  }
+  .card-title {
+    font-weight: bolder;
+    font-size: 18px;
+  }
+  .card-title:first-letter {
+    text-transform: uppercase;
+  }
+  .card-text {
+    font-size: 15px;
+  }
+  .card-text:first-letter {
+    text-transform: uppercase;
+  }
+  .btn {
+    box-shadow: 1px 3px 9px rgb(228, 228, 228);
+  }
+  .like-comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .fa-heart,
+  .fa-comment-dots,
+  .fa-ellipsis-h {
+    margin-right: 10px;
+  }
+}

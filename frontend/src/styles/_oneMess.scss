@@ -1,0 +1,44 @@
+.jumbotron {
+  margin-top: 30px;
+  padding: 20px;
+  .display-4 {
+    font-size: 24px;
+    color: #dc3545;
+  }
+  .lead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .nom-prenom {
+    font-size: 16px;
+    margin-right: 7px;
+    text-transform: lowercase;
+    font-weight: bolder;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-right: 7px;
+    text-transform: lowercase;
+  }
+  .date {
+    font-size: 10px;
+    color: grey;
+    margin-right: 7px;
+  }
+}
+
+.btn-supp-comm {
+  button {
+    border: none;
+    background: none;
+  }
+}
+.btn-supp-mess {
+  button {
+    border: none;
+    background: none;
+  }
+}
