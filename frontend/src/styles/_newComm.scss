@@ -1,0 +1,19 @@
+.new-comm {
+    padding: 8px;
+  #basic-addon1 {
+    background-color: transparent;
+    height: 100%;
+  }
+  #basic-addon2 {
+    background-color: transparent;
+    height: 100%;
+    color: #dc3545;
+    font-size: small;
+  }
+  .form-control::placeholder {
+      font-size: 13px;
+  }
+  .text-danger {
+      font-size: 12px;
+  }
+}

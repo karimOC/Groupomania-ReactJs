@@ -3,7 +3,9 @@ import { Component } from "react";
 import Navbar from "./navbar";
 import DeleteComm from "./deleteComm";
 import Footer from "./footer";
+import NewComm from "./newComm";
 import "../styles/_oneMess.scss";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "moment/locale/fr";
 let jwt = require("jsonwebtoken");
@@ -50,10 +52,13 @@ class oneMess extends Component {
         <div>
           <Navbar />
           <div className="jumbotron">
-            <hr className="my-1"></hr>
-            <h3 className="display-4">Aucun commentaire !</h3>
+            <Link className="retour" to="/feed">
+              <i className="fas fa-angle-left fa-lg"></i>retour
+            </Link>
+            <h3 className="display-4 mt-3">Aucun commentaire !</h3>
             <hr className="my-1 mb-3"></hr>
           </div>
+          <NewComm idMess={this.props.match.params.id} />
           <Footer />
         </div>
       );
@@ -62,7 +67,10 @@ class oneMess extends Component {
         <div>
           <Navbar />
           <div className="jumbotron">
-            <h3 className="display-4">Commentaires</h3>
+            <Link className="retour" to="/feed">
+              <i className="fas fa-angle-left fa-lg"></i>retour
+            </Link>
+            <h3 className="display-4 mt-3">Commentaires</h3>
             <hr className="my-1 mb-3"></hr>
             {allComments.map((comment) => (
               <div className="lead mb-2" key={comment.id}>
@@ -85,6 +93,7 @@ class oneMess extends Component {
             ))}
             <hr className="my-3"></hr>
           </div>
+          <NewComm idMess={this.props.match.params.id} />
           <Footer />
         </div>
       );

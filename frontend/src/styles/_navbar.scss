@@ -1,9 +1,14 @@
-.navbar {
+.logo {
+  max-width: 40%;
+}
+.navbar-button {
+  background-color: Transparent;
+  border: none;
+}
+
+.navbar-nav {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0px 20px 0px 0px;
-  .logo {
-    width: 40%;
-  }
 }

@@ -3,6 +3,7 @@ import "../styles/_allMess.scss";
 import { Link } from "react-router-dom";
 import { Component } from "react";
 import DeleteMess from "./deleteMess";
+import NewComm from "./newComm";
 import axios from "axios";
 let jwt = require("jsonwebtoken");
 
@@ -72,10 +73,6 @@ class allMess extends Component {
                     style={{ color: "#dc3545" }}
                   ></i>
                 </Link>
-                {/* <i
-                  className="fas fa-ellipsis-h fa-lg"
-                  style={{ color: "#dc3545" }}
-                ></i> */}
               </div>
 
               <h4 className="card-title">
@@ -83,6 +80,7 @@ class allMess extends Component {
               </h4>
               <p className="card-text">{message.content}</p>
             </div>
+            <NewComm idMess={message.id}/>
           </div>
         ))}
       </div>
