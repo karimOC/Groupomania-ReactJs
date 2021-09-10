@@ -73,7 +73,7 @@ class profile extends Component {
       })
       .then(() => {
         alert("Votre compte a bien été supprimé !");
-        window.location.href = "/";
+        window.location.href = "/login";
       })
       .catch((error) => {
         console.log({ error });

@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 import { Component } from "react";
 
 class navbar extends Component {
+  Logout() {
+    if (window.confirm("Voulez-vous vous déconnecter ?")) {
+      localStorage.clear();
+      window.location.href = "/login";
+    }
+  }
+
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,10 +37,10 @@ class navbar extends Component {
                 {" "}
                 Profile
               </Link>
-              <Link className="nav-link" to="/login">
+              <p onClick={this.Logout} className="nav-link">
                 {" "}
                 Déconnexion
-              </Link>
+              </p>
             </div>
           </div>
         </div>
