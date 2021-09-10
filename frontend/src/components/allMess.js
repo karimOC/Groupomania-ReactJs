@@ -25,6 +25,7 @@ class allMess extends Component {
       .then((res) => {
         this.setState({ allMessages: res.data });
         this.setState({ isAdmin: decodedToken.isAdmin });
+        console.log(this.state.allMessages);
       })
       .catch((error) => {
         console.log({ error });
@@ -80,7 +81,7 @@ class allMess extends Component {
               </h4>
               <p className="card-text">{message.content}</p>
             </div>
-            <NewComm idMess={message.id}/>
+            <NewComm idMess={message.id} />
           </div>
         ))}
       </div>
