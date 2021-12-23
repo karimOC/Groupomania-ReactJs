@@ -2,7 +2,7 @@
 
 Backend : Ce projet est développé avec NodeJS, Express, Sequelize et Mysql
 
-Frontend : Ce projet est développé avec VueJS
+Frontend : Ce projet est développé avec React
 
 L'installation de NodeJS, Express, Sequelize et Mysql est requise sur votre ordinateur.
 
