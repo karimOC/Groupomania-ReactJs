@@ -17,6 +17,7 @@ class newComm extends Component {
   };
 
   sendComment = (e) => {
+    
     e.preventDefault();
 
     let token = localStorage.getItem("token");
